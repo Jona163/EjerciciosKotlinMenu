@@ -25,3 +25,10 @@ fun main() {
         }
     }
 }
+
+fun calcularSuperficieCuadrado() {
+    println("\nIngrese el valor del lado del cuadrado:")
+    val lado = readLine()?.toDoubleOrNull() ?: 0.0
+    val superficie = lado * lado
+    println("La superficie del cuadrado es: $superficie")
+}
