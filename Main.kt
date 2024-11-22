@@ -15,3 +15,13 @@ fun main() {
             1 -> calcularSuperficieCuadrado()
             2 -> calcularTotalCompra()
             3 -> calcularIMC()
+            4 -> validarClave()
+            5 -> calcularSueldo()
+            6 -> {
+                println("Saliendo del programa...")
+                break
+            }
+            else -> println("Opción no válida. Intente de nuevo.")
+        }
+    }
+}
