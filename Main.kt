@@ -6,3 +6,5 @@ fun main() {
         println("3. Calcular índice de masa corporal (IMC)")
         println("4. Validar entrada con clave")
         println("5. Calcular sueldo con horas extras")
+       println("6. Salir")
+        print("Seleccione una opción: ")
