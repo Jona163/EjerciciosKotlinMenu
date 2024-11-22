@@ -43,3 +43,14 @@ fun calcularTotalCompra() {
     val total = precio * cantidad
     println("El total de la compra es: $$total")
 }
+
+fun calcularIMC() {
+    println("\nIngrese su peso en kilogramos:")
+    val peso = readLine()?.toDoubleOrNull() ?: 0.0
+
+    println("Ingrese su estatura en metros:")
+    val estatura = readLine()?.toDoubleOrNull() ?: 0.0
+
+    val imc = if (estatura > 0) peso / (estatura * estatura) else 0.0
+    println("Su índice de masa corporal (IMC) es: %.2f".format(imc))
+}
