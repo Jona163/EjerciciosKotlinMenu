@@ -10,3 +10,6 @@ fun main() {
         print("Seleccione una opción: ")
 
         val opcion = readLine()?.toIntOrNull() ?: 0
+
+        when (opcion) {
+            1 -> calcularSuperficieCuadrado()
