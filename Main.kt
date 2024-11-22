@@ -32,3 +32,14 @@ fun calcularSuperficieCuadrado() {
     val superficie = lado * lado
     println("La superficie del cuadrado es: $superficie")
 }
+
+fun calcularTotalCompra() {
+    println("\nIngrese el precio del artículo:")
+    val precio = readLine()?.toDoubleOrNull() ?: 0.0
+
+    println("Ingrese la cantidad de artículos adquiridos:")
+    val cantidad = readLine()?.toIntOrNull() ?: 0
+
+    val total = precio * cantidad
+    println("El total de la compra es: $$total")
+}
