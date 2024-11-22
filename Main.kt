@@ -54,3 +54,15 @@ fun calcularIMC() {
     val imc = if (estatura > 0) peso / (estatura * estatura) else 0.0
     println("Su índice de masa corporal (IMC) es: %.2f".format(imc))
 }
+
+fun validarClave() {
+    val claveCorrecta = "tesji123"
+    println("\nIngrese la clave:")
+    val claveIngresada = readLine() ?: ""
+
+    if (claveIngresada == claveCorrecta) {
+        println("Acceso permitido.")
+    } else {
+        println("Acceso denegado.")
+    }
+}
