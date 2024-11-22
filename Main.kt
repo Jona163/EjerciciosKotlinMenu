@@ -66,3 +66,22 @@ fun validarClave() {
         println("Acceso denegado.")
     }
 }
+
+fun calcularSueldo() {
+    println("\nIngrese los días trabajados:")
+    val diasTrabajados = readLine()?.toIntOrNull() ?: 0
+
+    println("Ingrese el pago por hora:")
+    val pagoPorHora = readLine()?.toDoubleOrNull() ?: 0.0
+
+    println("Ingrese el pago por hora extra:")
+    val pagoPorHoraExtra = readLine()?.toDoubleOrNull() ?: 0.0
+
+    println("Ingrese la cantidad de horas extra trabajadas por semana:")
+    val horasExtras = readLine()?.toIntOrNull() ?: 0
+
+    val horasExtrasValidas = if (horasExtras <= 5) horasExtras else 5
+
+    val sueldo = (diasTrabajados * 8 * pagoPorHora) + (horasExtrasValidas * pagoPorHoraExtra)
+    println("El sueldo total del trabajador es: $$sueldo")
+}
