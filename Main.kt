@@ -8,3 +8,5 @@ fun main() {
         println("5. Calcular sueldo con horas extras")
         println("6. Salir")
         print("Seleccione una opción: ")
+
+        val opcion = readLine()?.toIntOrNull() ?: 0
