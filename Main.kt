@@ -13,5 +13,5 @@ fun main() {
 
         when (opcion) {
             1 -> calcularSuperficieCuadrado()
-           2 -> calcularTotalCompra()
+            2 -> calcularTotalCompra()
             3 -> calcularIMC()
